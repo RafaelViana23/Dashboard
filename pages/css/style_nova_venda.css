@@ -1,0 +1,73 @@
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .3);
+}
+
+dialog{
+    top: 3%;
+    left: 25%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width: 50%;
+}
+
+form{
+    padding: 20px;
+}
+
+.form-field{
+    display: grid;
+    padding: 10px;
+}
+
+.form-field input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+}
+
+.form-field select{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+}
+
+.form-field label{
+    margin-top: 10px;
+}
+
+.button-sales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-sales button{
+    border: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    width: 150px;
+    cursor: pointer;
+}
+
+.button-sales button + button {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+button:hover {
+    background-color: aqua;
+}

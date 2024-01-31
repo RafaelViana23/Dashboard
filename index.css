@@ -1,0 +1,117 @@
+body {
+    background: #1d2634;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header h1 {
+    display: flex;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    padding: 60px 20px 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-field {
+    display: grid;
+    padding: 10px;
+}
+.form-field label {
+    font-size: 15px;
+}
+
+.form-field input { 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 5px;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.btn1 :hover {
+    color: #ff0000;
+}
+
+.btn1 button {
+    color: #414141;
+    
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.btn2 button {
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn2 button + button {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.btn2 button:hover {
+    background-color: aqua;
+}
+
+.register-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.register-btn button{
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    width: 100px;
+    cursor: pointer;
+}
+
+.register-btn button:hover{
+    background-color: aqua;
+}

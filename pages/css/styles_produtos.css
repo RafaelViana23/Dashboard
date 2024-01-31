@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-02);
+}
+
+/* Main styles */
+.home{
+    position: relative;
+    padding: 30px;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home .main-title{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.prod-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.prod-card .text{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.prod-card button{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    margin-top: 15px;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-right: 10px;
+    width: 210px;
+}
+
+.search button {
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: aqua;
+}
+
+.content {
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: #ccc;
+    width: 100%;
+    color: black;
+}
+
+table th {
+    background-color: #ccc;
+}
+
+table td img {
+    width: 22px;
+}
+
+table th,
+td {
+    padding: 1px 5px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+.upload-csv {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.upload-csv button{
+    cursor: pointer;
+}
+
+.upload-csv input{
+    cursor: pointer;
+}
+
+td img{
+    cursor: pointer;
+}
+
+td img + img{
+    margin-left: 10px;
+}

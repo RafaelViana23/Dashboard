@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Material Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/styles_dashboard.css">
+    <link rel="stylesheet" href="css/styles_novo_prod.css">
+    <link rel="stylesheet" href="css/styles_produtos.css">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Sistema</span>
+                    <span class="profession">web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="vendas.html">
+                            <i class='bx bx-line-chart icon'></i>
+                            <span class="text nav-text">Vendas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="produtos.html">
+                            <i class='bx bx-box icon'></i>
+                            <span class="text nav-text">Produtos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="conta.html">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="text nav-text">Minha conta</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="configuracoes.html">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon' ></i>
+                        <i class='bx bx-sun icon sun' ></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+                    
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <main class="home">
+        <div class="main-title">
+            <div class="text">Dashboard</div>
+        </div>
+
+        <div class="main-cards">
+            <div class="card">
+                <h2>Total de Produtos</h2>
+                <p id="total-products">0</p>
+            </div>
+            
+            <div class="card">
+                <h2>Valor Total do Estoque</h2>
+                <p id="total-value">$0.00</p>
+            </div>
+            <div class="card">
+                <h2>Número de ventas</h2>
+                <p id="sales">0</p>
+            </div>
+            
+            <div class="card">
+                <h2>Valor Total de vendas</h2>
+                <p id="total-value">R$0.00</p>
+            </div>
+        </div>
+
+        <!-- Product Input and Actions -->
+
+        <dialog id="uno">
+            <div class="card">
+                <div class="lineInput">
+                    <label>Quantidade</label>
+                    <input type="number" id="quantidade" placeholder="Quantidade do Produto">
+                </div>
+    
+                <div class="lineInput">
+                    <label>Produto</label>
+                    <input type="text" id="produto" placeholder="Nome do Produto">
+                </div>
+    
+                <div class="lineInput">
+                    <label>Modelo</label>
+                    <input type="text" id="modelo" placeholder="Modelo do Produto">
+                </div>
+    
+                <div class="lineInput">
+                    <label>Valor</label>
+                    <input type="number" id="preco" placeholder="Valor do Produto">
+                </div>
+
+                <div class="prod-button">
+                    <button onclick="produto.salvar()" id="btn1">Salvar</button>
+                    <button onclick="produto.cancelar()">Cancelar</button>
+                </div>
+            </div>
+        </dialog>
+
+        <div class="new-prod">
+            <div class="prod-card">
+                <div class="text">Novo Produto</div>
+                <button class="btn+" onclick="newProd()">+</button>
+            </div>
+        </div>
+
+        <!-- Content section (product table) -->
+        <div class="content">
+            <!-- Product table -->
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th class="center">QTD</th>
+                    <th>Produto</th>
+                    <th>Modelo</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+<script src="js/menu.js"></script>
+<script src="js/script_dashboard.js"></script>
+
+</html>

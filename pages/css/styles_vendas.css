@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ===== Transitions ===== */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-02);
+}
+
+/* ---------- MAIN ---------- */
+.home{
+    position: relative;
+    padding: 30px;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home .main-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.card .text{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.card button{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.card-sale{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-sale .text{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 190px;
+    cursor: pointer;
+}
+
+.filter input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-right: 10px;
+    width: 190px;
+}
+
+.filter button{
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    width: 100px;
+    cursor: pointer;
+}
+
+.sales{
+    padding: 20px;
+}
+
+.sales li {
+    margin-bottom: 30px;
+    list-style-type: none;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

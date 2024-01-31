@@ -1,0 +1,60 @@
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .3);
+}
+
+dialog{
+    top: 3%;
+    left: 25%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width: 50%;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.lineInput {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.card input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 5px;
+}
+
+.card button {
+    border: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    width: 150px;
+    cursor: pointer;
+}
+.prod-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prod-button button + button {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+button:hover {
+    background-color: aqua;
+}
